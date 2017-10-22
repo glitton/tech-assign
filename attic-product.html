@@ -1,0 +1,839 @@
+
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <script src="https://cdn.optimizely.com/js/9111992729.js"></script>
+ 
+   <!-- CSS ================================================== -->
+  <link href="http://cdn.shopify.com/s/files/1/0923/0916/t/2/assets/timber.scss.css?8024774543298092692" rel="stylesheet" type="text/css" media="all" />
+  <link href="http://cdn.shopify.com/s/files/1/0923/0916/t/2/assets/theme.scss.css?8024774543298092692" rel="stylesheet" type="text/css" media="all" />
+  
+  <link href="http://fonts.googleapis.com/css?family=Arapey:400" rel="stylesheet" type="text/css" media="all" />
+
+    <link href="http://fonts.googleapis.com/css?family=Old+Standard+TT:400" rel="stylesheet" type="text/css" media="all" />
+    
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet" type="text/css" media="all" />
+  
+  <!-- Basic page needs ================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+
+  
+    <script type="text/javascript">
+    (function(){
+      
+      //Helper to get cookie value
+      function getCookie(name) {
+        var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+        return v ? v[2] : null;
+      }
+
+      //Helper to get query param value
+      function getParameterByName(field, url) {
+        var href = url ? url : window.location.href;
+        var reg = new RegExp( '[?&]' + field + '=([^&#]*)', 'i' );
+        var string = reg.exec(href);
+        return string ? string[1] : null;
+      }
+
+      //Helper to return snippet url
+      function getSnippetURL(projectId) {
+        var protocol = window.location.protocol === 'http:' ? 'http:' : 'https:';
+
+        return protocol + '//cdn.optimizely.com/js/' + projectId + '.js';
+      }
+  
+      //Helper to set cookie
+      function setCookie(name, value, days) {
+        var d = new Date;
+        d.setTime(d.getTime() + 24*60*60*1000*days);
+        document.cookie = name + '=' + value + ';path=/;expires=' + d.toGMTString();
+      }
+
+      //Setup default project for www.atticandbutton.us
+      var COOKIE_EXPIRATION = 365,
+          COOKIE_NAME = 'optimizelyProjectId',
+          DEFAULT_PROJECT = '8167681053',
+          PROJECT_PARAMETER = 'pid';
+
+      var newProjectId = getParameterByName(PROJECT_PARAMETER);
+
+      //Check to see if project id parameter is on URL
+      if (newProjectId) {
+        setCookie(COOKIE_NAME, newProjectId, COOKIE_EXPIRATION);
+      }
+
+      var projectId = getCookie(COOKIE_NAME) || DEFAULT_PROJECT;
+      
+      // Talk to @andreas (formerly @jon) if you need to change this!
+      if (window.location.host === 'www.atticandbutton.com') {
+        /***
+          ANDREAS: DO NOT MODIFY THE CONTENT BELOW WITHOUT TALKING TO ANDREAS
+                 Discussed with Jon Noronha, ADEPT should use www.atticandbutton.us, GTM will use www.atticandbutton.com
+                     This site is used across the GTM teams for demos in a retail environment
+        */
+        //Setup new default snippet for .com
+        var DEFAULT_PROJECT = '8167681053',
+            projectId = getCookie(COOKIE_NAME) || DEFAULT_PROJECT,
+            snippetURL = getSnippetURL(projectId);
+      }
+      
+      else {
+    var snippetURL = getSnippetURL(projectId);
+      }
+      
+      //Dynamically writing snippet
+    document.write('<scr' + 'ipt src="' + snippetURL + '"></scr' + 'ipt>');
+
+    })();
+  </script>
+
+  <!-- Title and description ================================================== -->
+  <title>
+  Copper Anchor Bracelet &ndash; Attic &amp; Button
+  </title>
+
+  
+  <meta name="description" content="Individually made with 100% American craftsmanship, this anchor serves as an emblem of the rustic appeal and authenticity that Attic and Button wearers pursue e">
+  
+
+  <!-- Helpers ================================================== -->
+  <!-- /snippets/social-meta-tags.liquid -->
+
+
+  <meta property="og:type" content="product">
+  <meta property="og:title" content="Copper Anchor Bracelet">
+
+  
+  <meta property="og:image" content="http://cdn.shopify.com/s/files/1/0923/0916/products/Z0IDg7c79O_copper_anchor_bracelet_0_original_grande.jpg?v=1470872857">
+  <meta property="og:image:secure_url" content="https://cdn.shopify.com/s/files/1/0923/0916/products/Z0IDg7c79O_copper_anchor_bracelet_0_original_grande.jpg?v=1470872857">
+  
+  <meta property="og:image" content="http://cdn.shopify.com/s/files/1/0923/0916/products/4xvlxOEvTs_copper_anchor_bracelet_3_original_grande.jpg?v=1470872859">
+  <meta property="og:image:secure_url" content="https://cdn.shopify.com/s/files/1/0923/0916/products/4xvlxOEvTs_copper_anchor_bracelet_3_original_grande.jpg?v=1470872859">
+  
+  <meta property="og:image" content="http://cdn.shopify.com/s/files/1/0923/0916/products/4kd82Tsaay_copper_anchor_bracelet_1_original_grande.jpg?v=1470872859">
+  <meta property="og:image:secure_url" content="https://cdn.shopify.com/s/files/1/0923/0916/products/4kd82Tsaay_copper_anchor_bracelet_1_original_grande.jpg?v=1470872859">
+  
+  <meta property="og:price:amount" content="55.00">
+  <meta property="og:price:currency" content="USD">
+
+
+  <meta property="og:description" content="Individually made with 100% American craftsmanship, this anchor serves as an emblem of the rustic appeal and authenticity that Attic and Button wearers pursue e">
+
+  <meta property="og:url" content="https://www.atticandbutton.us/products/copper-anchor-bracelet">
+  <meta property="og:site_name" content="Attic &amp; Button">
+
+
+
+
+<meta name="twitter:card" content="summary">
+
+
+  <meta name="twitter:title" content="Copper Anchor Bracelet">
+  <meta name="twitter:description" content="Individually made with 100% American craftsmanship, this anchor serves as an emblem of the rustic appeal and authenticity that Attic and Button wearers pursue every day.Features
+
+Antique brown
+Copper maritime anchor
+3mm antique brown hand-treated leather cord
+Made in USA
+">
+  <meta name="twitter:image" content="https://cdn.shopify.com/s/files/1/0923/0916/products/Z0IDg7c79O_copper_anchor_bracelet_0_original_medium.jpg?v=1470872857">
+  <meta name="twitter:image:width" content="240">
+  <meta name="twitter:image:height" content="240">
+
+
+  <link rel="canonical" href="https://www.atticandbutton.us/products/copper-anchor-bracelet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#1c1d1d">
+
+  <!-- Header hook for plugins ================================================== -->
+  <meta name="shopify-checkout-api-token" content="4f32f37559706037db1aa2ff7c4612aa">
+<link rel="alternate" type="application/json+oembed" href="https://www.atticandbutton.us/products/copper-anchor-bracelet.oembed">
+<script type="text/javascript">
+//<![CDATA[
+      var Shopify = Shopify || {};
+      Shopify.shop = "stroopwafel-emporium.myshopify.com";
+      Shopify.theme = {"name":"brooklyn","id":48200259,"theme_store_id":null,"role":"main"};
+      Shopify.theme.handle = "null";
+      Shopify.theme.style = {"id":null,"handle":null};
+
+//]]>
+</script><script id="__st">
+//<![CDATA[
+var __st={"a":9230916,"offset":-25200,"reqid":"51c94486-622b-4d9d-95f7-ffc29ac7f693","pageurl":"www.atticandbutton.us\/products\/copper-anchor-bracelet","t":"prospect","u":"3e799fce190c","p":"product","rtyp":"product","rid":8007600070};
+//]]>
+</script><script src="https://cdn.shopify.com/s/javascripts/shopify_stats.js?v=6" type="text/javascript" async="async"></script>
+<meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/9230916/digital_wallets/dialog" />
+<script type="text/javascript">
+//<![CDATA[
+        window['GoogleAnalyticsObject'] = 'ga';
+        window['ga'] = window['ga'] || function() {
+          (window['ga'].q = window['ga'].q || []).push(arguments);
+        };
+        window['ga'].l = 1 * new Date();
+
+//]]>
+</script><script src="https://www.google-analytics.com/analytics.js" type="text/javascript" async="async"></script><script type="text/javascript">var _gaUTrackerOptions = {'allowLinker': true};ga('create', 'UA-75268907-3', 'auto', _gaUTrackerOptions);ga('send', 'pageview');
+      (function(){
+        ga('require', 'linker');
+        function addListener(element, type, callback) {
+          if (element.addEventListener) {
+            element.addEventListener(type, callback);
+          }
+          else if (element.attachEvent) {
+            element.attachEvent('on' + type, callback);
+          }
+        }
+        function decorate(event) {
+          event = event || window.event;
+          var target = event.target || event.srcElement;
+          if (target && (target.action || target.href)) {
+            ga(function (tracker) {
+              var linkerParam = tracker.get('linkerParam');
+              document.cookie = '_shopify_ga=' + linkerParam + '; ' + 'path=/';
+            });
+          }
+        }
+        addListener(window, 'load', function(){
+          for (var i=0; i<document.forms.length; i++) {
+            if(document.forms[i].action && document.forms[i].action.indexOf('/cart') >= 0) {
+              addListener(document.forms[i], 'submit', decorate);
+            }
+          }
+          for (var i=0; i<document.links.length; i++) {
+            if(document.links[i].href && document.links[i].href.indexOf('/checkout') >= 0) {
+              addListener(document.links[i], 'click', decorate);
+            }
+          }
+        })
+      }());
+    </script><script src="http://cdn.shopify.com/s/assets/themes_support/ga_urchin_forms-68ca1924c495cfc55dac65f4853e0c9a395387ffedc8fe58e0f2e677f95d7f23.js" defer="defer"></script>
+      <script type="text/javascript">
+        
+      window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+      window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+      window.ShopifyAnalytics.meta.currency = 'USD';
+      var meta = {"product":{"id":8007600070,"vendor":"Attic \u0026 Button","type":"Accessory","variants":[{"id":26180400774,"price":5500,"name":"Copper Anchor Bracelet","public_title":null,"sku":""}]},"page":{"pageType":"product","resourceType":"product","resourceId":8007600070}};
+      for (var attr in meta) {
+        window.ShopifyAnalytics.meta[attr] = meta[attr];
+      }
+    
+      </script>
+
+      <script type="text/javascript">
+        window.ShopifyAnalytics.merchantGoogleAnalytics = function() {
+          
+        };
+      </script>
+
+      <script type="text/javascript" class="analytics">
+        
+        
+
+        (function () {
+          var customDocumentWrite = function(content) {
+            var jquery = null;
+
+            if (window.jQuery) {
+              jquery = window.jQuery;
+            } else if (window.Checkout && window.Checkout.$) {
+              jquery = window.Checkout.$;
+            }
+
+            if (jquery) {
+              jquery('body').append(content);
+            }
+          };
+
+          var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+          if (trekkie.integrations) {
+            return;
+          }
+          trekkie.methods = [
+            'identify',
+            'page',
+            'ready',
+            'track',
+            'trackForm',
+            'trackLink'
+          ];
+          trekkie.factory = function(method) {
+            return function() {
+              var args = Array.prototype.slice.call(arguments);
+              args.unshift(method);
+              trekkie.push(args);
+              return trekkie;
+            };
+          };
+          for (var i = 0; i < trekkie.methods.length; i++) {
+            var key = trekkie.methods[i];
+            trekkie[key] = trekkie.factory(key);
+          }
+          trekkie.load = function(config) {
+            trekkie.config = config;
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.onerror = function(e) {
+              (new Image()).src = '//v.shopify.com/internal_errors/track?error=trekkie_load';
+            };
+            script.async = true;
+            script.src = 'https://cdn.shopify.com/s/javascripts/tricorder/trekkie.storefront.min.js?v=2017.09.05.1';
+            var first = document.getElementsByTagName('script')[0];
+            first.parentNode.insertBefore(script, first);
+          };
+          trekkie.load(
+            {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":9230916,"isMerchantRequest":null,"themeId":48200259,"themeCityHash":5939773197463042075}},"Performance":{"navigationTimingApiMeasurementsEnabled":true,"navigationTimingApiMeasurementsSampleRate":0.1},"Session Attribution":{}}
+          );
+
+          var loaded = false;
+          trekkie.ready(function() {
+            if (loaded) return;
+            loaded = true;
+
+            window.ShopifyAnalytics.lib = window.trekkie;
+            
+
+            var originalDocumentWrite = document.write;
+            document.write = customDocumentWrite;
+            try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+            document.write = originalDocumentWrite;
+
+            
+        window.ShopifyAnalytics.lib.page(
+          null,
+          {"pageType":"product","resourceType":"product","resourceId":8007600070}
+        );
+      
+            
+        window.ShopifyAnalytics.lib.track(
+          "Viewed Product",
+          {"variantId":26180400774,"productId":8007600070,"name":"Copper Anchor Bracelet","price":"55.00","currency":"USD","sku":"","brand":"Attic \u0026 Button","variant":null,"category":"Accessory","nonInteraction":true}
+        );
+      
+          });
+
+          
+      var eventsListenerScript = document.createElement('script');
+      eventsListenerScript.async = true;
+      eventsListenerScript.src = "http://cdn.shopify.com/s/assets/shop_events_listener-f2c5800305098f0ebebdfa7d980c9abf56514c46d5305e97a7c476f7c9116163.js";
+      document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+    
+        })();
+      </script>
+    
+<script id="apple-pay-shop-capabilities" type="application/json">{"shopId":9230916,"countryCode":"US","currencyCode":"USD","merchantCapabilities":["supports3DS"],"merchantId":"gid:\/\/shopify\/Shop\/9230916","merchantName":"Attic \u0026 Button","requiredBillingContactFields":["postalAddress","email"],"requiredShippingContactFields":["postalAddress","email"],"shippingType":"shipping","supportedNetworks":["visa","masterCard","amex","discover"],"total":{"type":"pending","label":"Attic \u0026 Button","amount":"1.00"}}</script>
+<meta id="in-context-paypal-metadata" data-shop-id="9230916" data-environment="production" data-locale="en_US" data-merchant-id="Y4JPN6FGTCST4" data-redirect-url="" />
+<script src="http://cdn.shopify.com/s/assets/storefront/express_buttons-35098142ae9f616283c902dc6bfc2807454dba49498ff58558e15a5245f43d82.js" defer="defer" crossorigin="anonymous" integrity="sha256-NQmBQq6fYWKDyQLca/woB0VNuklJj/WFWOFaUkX0PYI="></script><script>
+//<![CDATA[
+      window.Shopify = window.Shopify || {};
+      window.Shopify.Checkout = window.Shopify.Checkout || {};
+      window.Shopify.Checkout.apiHost = "stroopwafel-emporium.myshopify.com";
+      window.Shopify.Checkout.rememberMeHost = "pay.shopify.com";
+      window.Shopify.Checkout.rememberMeAccessToken = "VGJlVyszdDhlVDdDQ0J6Q1J2OUtZdTVndGRJZzVBa085dWFJSTVQSkxqaVp0ZS9JMUxpTWFtaWozY0duS2pnOC0tcnNHM0YxN0cvbW1pQmRzTGdLZWlldz09--8fdf5df7b10669d3fea18b2bd38c742b3f580d98";
+      window.Shopify.Checkout.sheetStyleSheetUrl = "\/\/cdn.shopify.com\/s\/assets\/shared\/sheet\/main-b4e25b00c1c0829bda635a3d692f27a36fd5d13252a915a5eeb4eaa9bf930edf.css";
+
+//]]>
+</script>
+<script>
+//<![CDATA[
+window.ShopifyPaypalV4VisibilityTracking = true;
+//]]>
+</script>
+
+<style media="all">.additional-checkout-button{border:0 !important;border-radius:5px !important;display:inline-block;margin:0 0 10px;padding:0 24px !important;max-width:100%;min-width:150px !important;line-height:44px !important;text-align:center !important}.additional-checkout-button+.additional-checkout-button{margin-left:10px}.additional-checkout-button:last-child{margin-bottom:0}.additional-checkout-button span{font-size:14px !important}.additional-checkout-button img{display:inline-block !important;height:1.3em !important;margin:0 !important;vertical-align:middle !important;width:auto !important}@media (max-width: 500px){.additional-checkout-button{display:block;margin-left:0 !important;padding:0 10px !important;width:100%}}.additional-checkout-button--apple-pay{background-color:#000 !important;color:#fff !important;display:none;font-family:-apple-system, &#39;Helvetica Neue&#39;, sans-serif !important;min-width:150px !important;white-space:nowrap !important}.additional-checkout-button--apple-pay:hover,.additional-checkout-button--apple-pay:active,.additional-checkout-button--apple-pay:visited{color:#fff !important;text-decoration:none !important}.additional-checkout-button--apple-pay .additional-checkout-button__logo{background:-webkit-named-image(apple-pay-logo-white) center center no-repeat !important;background-size:auto 100% !important;display:inline-block !important;vertical-align:middle !important;width:3em !important;height:1.3em !important}@media (max-width: 500px){.additional-checkout-button--apple-pay{display:none}}.additional-checkout-button--paypal-express{background-color:#ffc439 !important}.additional-checkout-button--amazon{background-color:#fad676 !important;position:relative !important}.additional-checkout-button--amazon .additional-checkout-button__logo{-webkit-transform:translateY(4px) !important;transform:translateY(4px) !important}.additional-checkout-button--amazon .alt-payment-list-amazon-button-image{max-height:none !important;opacity:0 !important;position:absolute !important;top:0 !important;left:0 !important;width:100% !important;height:100% !important}.additional-checkout-button-visually-hidden{border:0 !important;clip:rect(0, 0, 0, 0) !important;clip:rect(0 0 0 0) !important;width:1px !important;height:1px !important;margin:-2px !important;overflow:hidden !important;padding:0 !important;position:absolute !important}
+</style>
+  <!-- /snippets/oldIE-js.liquid -->
+
+
+<!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript"></script>
+<script src="//cdn.shopify.com/s/files/1/0923/0916/t/2/assets/respond.min.js?8024774543298092692" type="text/javascript"></script>
+<link href="//cdn.shopify.com/s/files/1/0923/0916/t/2/assets/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="//www.atticandbutton.us/search?q=5d79224fdfbe9d029815770f52a21ad4" id="respond-redirect" rel="respond-redirect" />
+<script src="//www.atticandbutton.us/search?q=5d79224fdfbe9d029815770f52a21ad4" type="text/javascript"></script>
+<![endif]-->
+
+
+<!--[if (lte IE 9) ]><script src="//cdn.shopify.com/s/files/1/0923/0916/t/2/assets/match-media.min.js?8024774543298092692" type="text/javascript"></script><![endif]-->
+
+  
+  
+  
+  
+  <script src="http://cdn.shopify.com/s/files/1/0923/0916/t/2/assets/modernizr.min.js?8024774543298092692" type="text/javascript"></script>
+  
+  
+  
+  
+    <script>window.localStorage.setItem('loggedIn', false);</script>
+  
+  
+</head>
+
+
+<body id="copper-anchor-bracelet" class="template-product">
+
+  <div id="NavDrawer" class="drawer drawer--left">
+    <div class="drawer__fixed-header">
+      <div class="drawer__header">
+        <div class="drawer__close drawer__close--left">
+          <button type="button" class="icon-fallback-text drawer__close-button js-drawer-close">
+            <span class="icon icon-x" aria-hidden="true"></span>
+            <span class="fallback-text">Close menu</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="drawer__inner">
+
+      <!-- begin mobile-nav -->
+      <ul class="mobile-nav">
+        
+            <li class="mobile-nav__item">
+              <a href="/" class="mobile-nav__link">Home</a>
+            </li>
+          
+            <li class="mobile-nav__item">
+              <a href="/collections/all" class="mobile-nav__link">Catalog</a>
+            </li>
+          
+            <li class="mobile-nav__item">
+              <a href="/blogs/news" class="mobile-nav__link">Blog</a>
+            </li>
+          
+            <li class="mobile-nav__item">
+              <a href="/pages/about-us" class="mobile-nav__link">About Us</a>
+            </li>
+
+        <li class="mobile-nav__spacer"></li>
+
+            <li class="mobile-nav__item mobile-nav__item--secondary">
+              <a href="/account/login" id="customer_login_link">Log In</a>
+            </li>
+            
+            <li class="mobile-nav__item mobile-nav__item--secondary">
+              <a href="/account/register" id="customer_register_link">Create Account</a>
+            </li>
+        
+          <li class="mobile-nav__item mobile-nav__item--secondary"><a href="/search">Search</a></li>
+        
+          <li class="mobile-nav__item mobile-nav__item--secondary"><a href="/pages/about-us">About Us</a></li>
+        
+      </ul>
+      <!-- //mobile-nav -->
+    </div>
+  </div>
+  <div id="CartDrawer" class="drawer drawer--right">
+    <div class="drawer__fixed-header">
+      <div class="drawer__header">
+        <div class="drawer__title">Your cart</div>
+        <div class="drawer__close">
+          <button type="button" class="icon-fallback-text drawer__close-button js-drawer-close">
+            <span class="icon icon-x" aria-hidden="true"></span>
+            <span class="fallback-text">Close Cart</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="drawer__inner">
+      <div id="CartContainer" class="drawer__cart"></div>
+    </div>
+  </div>
+
+  <div id="PageContainer" class="is-moved-by-drawer">
+
+    <div class="header-wrapper">
+      <header class="site-header" role="banner">
+        <div class="wrapper">
+          <div class="grid--full grid--table">
+            <div class="grid__item large--hide one-quarter">
+              <div class="site-nav--mobile">
+                <button type="button" class="icon-fallback-text site-nav__link js-drawer-open-left" aria-controls="NavDrawer" aria-expanded="false">
+                  <span class="icon icon-hamburger" aria-hidden="true"></span>
+                  <span class="fallback-text">Site navigation</span>
+                </button>
+              </div>
+            </div>
+            <div class="grid__item large--one-third medium-down--one-half">
+              
+              
+                <div class="h1 site-header__logo large--left" itemscope itemtype="http://schema.org/Organization">
+
+                  <a href="/" itemprop="url" class="site-header__logo-link logo--has-inverted">
+                    <img src="http://cdn.shopify.com/s/files/1/0923/0916/t/2/assets/logo.png?8024774543298092692" alt="Attic &amp; Button" itemprop="logo">
+                  </a>
+                  
+                    <a href="/" itemprop="url" class="logo--inverted">
+                      <img src="http://cdn.shopify.com/s/files/1/0923/0916/t/2/assets/logo-inverted.png?8024774543298092692" alt="Attic &amp; Button" itemprop="logo">
+                    </a>
+
+                </div>
+              
+            </div>
+            <div class="grid__item large--two-thirds large--text-right medium-down--hide">
+              
+              <!-- begin site-nav -->
+              <ul class="site-nav" id="AccessibleNav">
+                <li class="site-nav__item site-nav--compress__menu">
+                  <button type="button" class="icon-fallback-text site-nav__link site-nav__link--icon js-drawer-open-left" aria-controls="NavDrawer" aria-expanded="false">
+                    <span class="icon icon-hamburger" aria-hidden="true"></span>
+                    <span class="fallback-text">Site navigation</span>
+                  </button>
+                </li>
+                
+ 
+                  
+                    <li class="site-nav__item site-nav__expanded-item">
+                      <a href="/" class="site-nav__link">Home</a>
+                    </li>
+
+                  
+                  
+                  
+                    <li class="site-nav__item site-nav__expanded-item">
+                      <a href="/collections/all" class="site-nav__link">Catalog</a>
+                    </li>
+                  
+                  
+                    <li class="site-nav__item site-nav__expanded-item">
+                      <a href="/blogs/news" class="site-nav__link">Blog</a>
+                    </li>
+
+                  
+                    <li class="site-nav__item site-nav__expanded-item">
+                      <a href="/pages/about-us" class="site-nav__link">About Us</a>
+                    </li>
+    
+                  <li class="site-nav__item site-nav__expanded-item">
+                    
+                        <a id="register" class="site-nav__link site-nav__link--icon" href="#">
+                          <span class="icon-fallback-text">
+                            <span class="icon icon-customer" aria-hidden="true"></span>
+                            <span class="fallback-text"></span>
+                          </span>
+                        </a>
+                    
+                  </li>
+                
+
+                <li class="site-nav__item">
+                  <a href="/cart" class="site-nav__link site-nav__link--icon cart-link js-drawer-open-right" aria-controls="CartDrawer" aria-expanded="false">
+                    <span class="icon-fallback-text">
+                      <span class="icon icon-cart" aria-hidden="true"></span>
+                      <span class="fallback-text">Cart</span>
+                    </span>
+                    <span class="cart-link__bubble cart-link__bubble--visible"></span>
+                  </a>
+                </li>
+
+              </ul>
+              <!-- //site-nav -->
+            </div>
+            <div class="grid__item large--hide one-quarter">
+              <div class="site-nav--mobile text-right">
+                <a href="/cart" class="site-nav__link cart-link js-drawer-open-right" aria-controls="CartDrawer" aria-expanded="false">
+                  <span class="icon-fallback-text">
+                    <span class="icon icon-cart" aria-hidden="true"></span>
+                    <span class="fallback-text">Cart</span>
+                  </span>
+                  <span class="cart-link__bubble cart-link__bubble--visible"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </header>
+    </div>
+
+    <main class="main-content" role="main">
+      <div class="wrapper">
+        <!-- /templates/product.liquid -->
+
+<div itemscope itemtype="http://schema.org/Product">
+
+  <meta itemprop="url" content="https://www.atticandbutton.us/products/copper-anchor-bracelet">
+  <meta itemprop="image" content="http://cdn.shopify.com/s/files/1/0923/0916/products/Z0IDg7c79O_copper_anchor_bracelet_0_original_grande.jpg?v=1470872857">
+
+
+  <div class="grid product-single">
+    <div class="grid__item large--seven-twelfths medium--seven-twelfths text-center">
+      <div class="product-single__photos">
+
+        
+        <div class="product-single__photo-wrapper">
+          <img class="product-single__photo" id="ProductPhotoImg" src="http://cdn.shopify.com/s/files/1/0923/0916/products/Z0IDg7c79O_copper_anchor_bracelet_0_original_grande.jpg?v=1470872857" data-mfp-src="http://cdn.shopify.com/s/files/1/0923/0916/products/Z0IDg7c79O_copper_anchor_bracelet_0_original_1024x1024.jpg?v=1470872857" alt="Copper Anchor Bracelet" data-image-id="16541727686">
+        </div>
+
+          
+            <div class="product-single__photo-wrapper">
+              <img class="product-single__photo" src="http://cdn.shopify.com/s/files/1/0923/0916/products/4xvlxOEvTs_copper_anchor_bracelet_3_original_grande.jpg?v=1470872859" data-mfp-src="http://cdn.shopify.com/s/files/1/0923/0916/products/4xvlxOEvTs_copper_anchor_bracelet_3_original_1024x1024.jpg?v=1470872859" alt="Copper Anchor Bracelet" data-image-id="16541728070">
+            </div>
+          
+        
+          
+            <div class="product-single__photo-wrapper">
+              <img class="product-single__photo" src="http://cdn.shopify.com/s/files/1/0923/0916/products/4kd82Tsaay_copper_anchor_bracelet_1_original_grande.jpg?v=1470872859" data-mfp-src="http://cdn.shopify.com/s/files/1/0923/0916/products/4kd82Tsaay_copper_anchor_bracelet_1_original_1024x1024.jpg?v=1470872859" alt="Copper Anchor Bracelet" data-image-id="16541728454">
+            </div>
+          
+        
+      </div>
+    </div>
+
+    <div class="grid__item product-single__meta--wrapper medium--five-twelfths large--five-twelfths">
+      <div class="product-single__meta">
+        <p style="text-align: left"><a class="cat">Home</a> » <a class="subcat">Accessory</a> » <a class="brand">Attic & Button</a></p>
+
+
+        <h1 class="product-single__title" itemprop="name">Copper Anchor Bracelet</h1>
+
+        <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+          
+
+
+          <span id="ProductPrice" class="product-single__price" itemprop="price">
+            $55.00
+          </span>
+
+          <hr class="hr--small">
+
+          <meta itemprop="priceCurrency" content="USD">
+          <link itemprop="availability" href="http://schema.org/InStock">
+
+          <form action="/cart/add" method="post" enctype="multipart/form-data" class="product-single__form" id="AddToCartForm">
+            <select name="id" id="ProductSelect" class="product-single__variants">
+              
+                
+                  <option  selected="selected"  value="26180400774">Default Title - $55.00 USD</option>
+                
+              
+            </select>
+
+            <div class="product-single__add-to-cart">
+              <button type="submit" name="add" id="AddToCart" class="btn">
+                <span id="AddToCartText">Add to Cart</span>
+              </button>
+            </div>
+          </form>
+
+        </div>
+
+        <div class="product-single__description rte" itemprop="description">
+          Individually made with 100% American craftsmanship, this anchor serves as an emblem of the rustic appeal and authenticity that Attic and Button wearers pursue every day.<br><br>Features<br>
+<ul>
+<li><span style="line-height: 1.5;">Antique brown</span></li>
+<li><span style="line-height: 1.5;">Copper maritime anchor</span></li>
+<li><span style="line-height: 1.5;">3mm antique brown hand-treated leather cord</span></li>
+<li><span style="line-height: 1.5;">Made in USA</span></li>
+</ul>
+        </div>
+
+        
+          <!-- /snippets/social-sharing.liquid -->
+
+
+
+<div class="social-sharing clean" data-permalink="https://www.atticandbutton.us/products/copper-anchor-bracelet">
+
+  
+    <a target="_blank" href="//www.facebook.com/sharer.php?u=https://www.atticandbutton.us/products/copper-anchor-bracelet" class="share-facebook">
+      <span class="icon icon-facebook" aria-hidden="true"></span>
+      <span class="share-title">Share</span>
+      
+    </a>
+  
+
+  
+    <a target="_blank" href="//twitter.com/share?url=https://www.atticandbutton.us/products/copper-anchor-bracelet&amp;text=Copper%20Anchor%20Bracelet" class="share-twitter">
+      <span class="icon icon-twitter" aria-hidden="true"></span>
+      <span class="share-title">Tweet</span>
+      
+    </a>
+  
+      <a target="_blank" href="http://pinterest.com/pin/create/button/?url=https://www.atticandbutton.us/products/copper-anchor-bracelet&amp;media=http://cdn.shopify.com/s/files/1/0923/0916/products/Z0IDg7c79O_copper_anchor_bracelet_0_original_1024x1024.jpg?v=1470872857&amp;description=Copper%20Anchor%20Bracelet" class="share-pinterest">
+        <span class="icon icon-pinterest" aria-hidden="true"></span>
+        <span class="share-title">Pin it</span>
+        
+      </a>
+    
+    <a target="_blank" href="http://www.thefancy.com/fancyit?ItemURL=https://www.atticandbutton.us/products/copper-anchor-bracelet&amp;Title=Copper%20Anchor%20Bracelet&amp;Category=Other&amp;ImageURL=http://cdn.shopify.com/s/files/1/0923/0916/products/Z0IDg7c79O_copper_anchor_bracelet_0_original_1024x1024.jpg?v=1470872857" class="share-fancy">
+        <span class="icon icon-fancy" aria-hidden="true"></span>
+        <span class="share-title">Fancy</span>
+      </a>
+    
+    <a target="_blank" href="//plus.google.com/share?url=https://www.atticandbutton.us/products/copper-anchor-bracelet" class="share-google">
+      <!-- Cannot get Google+ share count with JS yet -->
+      <span class="icon icon-google" aria-hidden="true"></span>
+      
+        <span class="share-title">+1</span>
+      
+    </a>
+
+</div>
+        
+      </div>
+      </div>
+  </div>
+
+  
+
+</div>
+
+
+<script src="http://cdn.shopify.com/s/files/1/0923/0916/t/2/assets/variant_selection.js?8024774543298092692" type="text/javascript"></script>
+<!-- <script>
+  var selectCallback = function(variant, selector) {
+    timber.productPage({
+      money_format: "${{amount}}",
+      variant: variant,
+      selector: selector
+    });
+  };
+
+  jQuery(function($) {
+    new Shopify.OptionSelectors('ProductSelect', {
+      product: {"id":8007600070,"title":"Copper Anchor Bracelet","handle":"copper-anchor-bracelet","description":"Individually made with 100% American craftsmanship, this anchor serves as an emblem of the rustic appeal and authenticity that Attic and Button wearers pursue every day.\u003cbr\u003e\u003cbr\u003eFeatures\u003cbr\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cspan style=\"line-height: 1.5;\"\u003eAntique brown\u003c\/span\u003e\u003c\/li\u003e\n\u003cli\u003e\u003cspan style=\"line-height: 1.5;\"\u003eCopper maritime anchor\u003c\/span\u003e\u003c\/li\u003e\n\u003cli\u003e\u003cspan style=\"line-height: 1.5;\"\u003e3mm antique brown hand-treated leather cord\u003c\/span\u003e\u003c\/li\u003e\n\u003cli\u003e\u003cspan style=\"line-height: 1.5;\"\u003eMade in USA\u003c\/span\u003e\u003c\/li\u003e\n\u003c\/ul\u003e","published_at":"2016-08-10T16:46:00-07:00","created_at":"2016-08-10T16:47:36-07:00","vendor":"Attic \u0026 Button","type":"Accessory","tags":["accessories","bracelet"],"price":5500,"price_min":5500,"price_max":5500,"available":true,"price_varies":false,"compare_at_price":null,"compare_at_price_min":0,"compare_at_price_max":0,"compare_at_price_varies":false,"variants":[{"id":26180400774,"title":"Default Title","option1":"Default Title","option2":null,"option3":null,"sku":"","requires_shipping":true,"taxable":true,"featured_image":null,"available":true,"name":"Copper Anchor Bracelet","public_title":null,"options":["Default Title"],"price":5500,"weight":0,"compare_at_price":null,"inventory_quantity":1,"inventory_management":null,"inventory_policy":"deny","barcode":""}],"images":["\/\/cdn.shopify.com\/s\/files\/1\/0923\/0916\/products\/Z0IDg7c79O_copper_anchor_bracelet_0_original.jpg?v=1470872857","\/\/cdn.shopify.com\/s\/files\/1\/0923\/0916\/products\/4xvlxOEvTs_copper_anchor_bracelet_3_original.jpg?v=1470872859","\/\/cdn.shopify.com\/s\/files\/1\/0923\/0916\/products\/4kd82Tsaay_copper_anchor_bracelet_1_original.jpg?v=1470872859"],"featured_image":"\/\/cdn.shopify.com\/s\/files\/1\/0923\/0916\/products\/Z0IDg7c79O_copper_anchor_bracelet_0_original.jpg?v=1470872857","options":["Title"],"content":"Individually made with 100% American craftsmanship, this anchor serves as an emblem of the rustic appeal and authenticity that Attic and Button wearers pursue every day.\u003cbr\u003e\u003cbr\u003eFeatures\u003cbr\u003e\n\u003cul\u003e\n\u003cli\u003e\u003cspan style=\"line-height: 1.5;\"\u003eAntique brown\u003c\/span\u003e\u003c\/li\u003e\n\u003cli\u003e\u003cspan style=\"line-height: 1.5;\"\u003eCopper maritime anchor\u003c\/span\u003e\u003c\/li\u003e\n\u003cli\u003e\u003cspan style=\"line-height: 1.5;\"\u003e3mm antique brown hand-treated leather cord\u003c\/span\u003e\u003c\/li\u003e\n\u003cli\u003e\u003cspan style=\"line-height: 1.5;\"\u003eMade in USA\u003c\/span\u003e\u003c\/li\u003e\n\u003c\/ul\u003e"},
+      onVariantSelected: selectCallback,
+      enableHistoryState: true
+    });
+
+    // Add label if only one product option and it isn't 'Title'. Could be 'Size'.
+    
+  });
+</script> -->
+
+      </div>
+    </main>
+
+
+    <hr class="hr--large">
+    <footer class="site-footer small--text-center" role="contentinfo">
+      <div class="wrapper">
+
+        <div class="grid-uniform">
+
+            <div class="grid__item one-half small--one-whole">
+              <ul class="no-bullets site-footer__linklist">
+                
+                  <li><a href="/search">Search</a></li>
+
+                  <li><a href="/pages/about-us">About Us</a></li>
+
+                
+              </ul>
+            </div>
+
+          <div class="grid__item one-half small--one-whole large--text-right">
+            <p>&copy; 2017, Attic &amp; Button<br><a target="_blank" rel="nofollow" href="https://www.shopify.com">Powered by Shopify</a></p>
+            
+              <ul class="inline-list payment-icons">
+                
+                  <li>
+                    <span class="icon-fallback-text">
+                      <span class="icon icon-american_express" aria-hidden="true"></span>
+                      <span class="fallback-text">american express</span>
+                    </span>
+                  </li>
+                
+                  <li>
+                    <span class="icon-fallback-text">
+                      <span class="icon icon-apple_pay" aria-hidden="true"></span>
+                      <span class="fallback-text">apple pay</span>
+                    </span>
+                  </li>
+                
+                  <li>
+                    <span class="icon-fallback-text">
+                      <span class="icon icon-diners_club" aria-hidden="true"></span>
+                      <span class="fallback-text">diners club</span>
+                    </span>
+                  </li>
+                
+                  <li>
+                    <span class="icon-fallback-text">
+                      <span class="icon icon-discover" aria-hidden="true"></span>
+                      <span class="fallback-text">discover</span>
+                    </span>
+                  </li>
+                
+                  <li>
+                    <span class="icon-fallback-text">
+                      <span class="icon icon-jcb" aria-hidden="true"></span>
+                      <span class="fallback-text">jcb</span>
+                    </span>
+                  </li>
+                
+                  <li>
+                    <span class="icon-fallback-text">
+                      <span class="icon icon-master" aria-hidden="true"></span>
+                      <span class="fallback-text">master</span>
+                    </span>
+                  </li>
+                
+                  <li>
+                    <span class="icon-fallback-text">
+                      <span class="icon icon-paypal" aria-hidden="true"></span>
+                      <span class="fallback-text">paypal</span>
+                    </span>
+                  </li>
+                
+                  <li>
+                    <span class="icon-fallback-text">
+                      <span class="icon icon-shopify_pay" aria-hidden="true"></span>
+                      <span class="fallback-text">shopify pay</span>
+                    </span>
+                  </li>
+                
+                  <li>
+                    <span class="icon-fallback-text">
+                      <span class="icon icon-visa" aria-hidden="true"></span>
+                      <span class="fallback-text">visa</span>
+                    </span>
+                  </li>
+                
+              </ul>
+            
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+<!-- Buy Now Pop Up My Version-->
+<div class="attic-modal">
+  <div class="attic-modal-content">
+  <span class="attic-modal-close">x</span>
+    <div class="headline">
+      <h2>Free Shipping </h2>
+        <p id="message"></p>
+      <form action="/cart/add" method="post" enctype="multipart/form-data" class="attic-modal-form" id="attic-cart-submit">
+        <button type="submit" name="add" id="AddToCart">
+          <span id="AddToCartText">BUY NOW</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!--   <script src="http://cdn.shopify.com/s/files/1/0923/0916/t/2/assets/fastclick.min.js?8024774543298092692" type="text/javascript"></script>
+  <script src="http//cdn.shopify.com/s/files/1/0923/0916/t/2/assets/timber.js?8024774543298092692" type="text/javascript"></script>
+  <script src="http//cdn.shopify.com/s/files/1/0923/0916/t/2/assets/theme.js?8024774543298092692" type="text/javascript"></script>
+
+  <script src="http://cdn.shopify.com/s/files/1/0923/0916/t/2/assets/slick.min.js?8024774543298092692" type="text/javascript"></script>
+  
+  <script src="http//cdn.shopify.com/s/files/1/0923/0916/t/2/assets/scrolltofixed.min.js?8024774543298092692" type="text/javascript"></script>
+
+  <script src="http://cdn.shopify.com/s/files/1/0923/0916/t/2/assets/magnific-popup.min.js?8024774543298092692" type="text/javascript"></script>
+  
+  <script src="http://cdn.shopify.com/s/files/1/0923/0916/t/2/assets/social-buttons.js?8024774543298092692" type="text/javascript"></script> -->
+    
+  <script src="js/attic-modal.js"></script>
+</body>
+</html>

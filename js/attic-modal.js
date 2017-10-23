@@ -18,7 +18,7 @@ function showAtticModal() {
 // Captures the Add To Cart click event
 function modalAddToCart(evt) {
   evt.preventDefault();
-  //Access the item in the array
+  //Access the item in the Add To Cart array
   $('#AddToCart')[0].click();
 }
 
